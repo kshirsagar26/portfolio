@@ -47,7 +47,7 @@ const skills: ISkillListItem[] = [
       },
       {
         title: "DLP",
-        icon: "/skills/DLP.avif",
+        icon: "/skills/dlp.svg",
       },
       {
         title: "ISO Standards",
@@ -68,7 +68,7 @@ const skills: ISkillListItem[] = [
       },
       {
         title: "Postman",
-        icon: "/skills/postman.png",
+        icon: "/skills/postman.svg",
       },
       {
         title: "Nmap",
@@ -97,7 +97,7 @@ const skills: ISkillListItem[] = [
     items: [
       {
         title: "Bugcrowd",
-        icon: "/skills/bugcrowd.svg",
+        icon: "/skills/bugcrowd.png",
       },
       {
         title: "Hackerone",
@@ -105,7 +105,7 @@ const skills: ISkillListItem[] = [
       },
       {
         title: "TryHackMe",
-        icon: "/skills/tryhackme.jpg",
+        icon: "/skills/tryhackme.png",
       },
     ],
   },
@@ -145,19 +145,6 @@ const skills: ISkillListItem[] = [
         title: "Jupyter",
         icon: "/skills/jupyter.svg"
       }
-    ],
-  },
-  {
-    title: "Nontechnical Skills",
-    items: [
-      {
-        title: "Problem Solving",
-        icon: "/skills/problem-solving.png",
-      },
-      {
-        title: "Team Work",
-        icon: "/skills/teamwork.jpg",
-      },
     ],
   },
 ];
