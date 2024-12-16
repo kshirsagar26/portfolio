@@ -7,7 +7,7 @@ import ProjectItem from "./ProjectItem";
 import Column from "@/components/core/Column";
 
 const ProjectList = ({ projects }: Readonly<{ projects: IProjectItem[] }>) => {
-  const carouselRef = createRef<HTMLDivElement>();
+  const carouselRef = createRef<HTMLDivElement| null>();
 
   const _handleOnClickPrev = () => {
     if (!carouselRef || carouselRef.current === null) return;

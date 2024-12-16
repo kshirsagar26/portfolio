@@ -1,3 +1,5 @@
+"use client";
+
 import "./globals.scss";
 import { Poppins } from "next/font/google";
 import { ReactNode } from "react";
@@ -23,51 +25,6 @@ const poppins = Poppins({
     "Droid Sans",
   ],
 });
-
-export const metadata: Metadata = {
-  title: "Shlok Kshirsagar",
-  description:
-    "Shlok Shirsagar is a talented Cyber Security Professional.",
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  icons: [
-    {
-      url: "/favicon.ico",
-      rel: "icon",
-      sizes: "16x16",
-      type: "image/x-icon",
-    },
-    {
-      url: "/favicon.ico",
-      rel: "icon",
-      sizes: "32x32",
-      type: "image/x-icon",
-    },
-    {
-      url: "/favicon.ico",
-      rel: "icon",
-      sizes: "48x48",
-      type: "image/x-icon",
-    },
-    {
-      url: "/favicon.ico",
-      rel: "icon",
-      sizes: "64x64",
-      type: "image/x-icon",
-    },
-  ],
-  keywords: [
-  ],
-};
 
 const GoogleAnalytics = dynamic(
   () => import("@/components/common/GoogleAnalytics"),

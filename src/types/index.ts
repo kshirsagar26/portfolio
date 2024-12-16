@@ -110,7 +110,7 @@ export interface CoreComponentsProps {
   classNames?: string;
   onClick?: MouseEventHandler<HTMLDivElement>;
   id?: string;
-  elementRef?: RefObject<HTMLDivElement>;
+  elementRef?: RefObject<HTMLDivElement|null>
 }
 
 export interface ViewportProps {
