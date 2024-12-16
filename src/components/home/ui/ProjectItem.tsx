@@ -7,16 +7,12 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
-import Column from "@/components/core/Column";
-import Row from "@/components/core/Row";
-import CardBox from "@/components/core/CardBox";
 
 const ProjectItem = ({ project }: { project: IProjectItem }) => {
   return (
-    <CardBox classNames="relative flex flex-col justify-between items-center w-full max-w-[28rem] p-6 gap-6 rounded-[1rem] border border-[rgba(255,255,255,0.1)] shadow-lg dark:bg-[var(--primaryColor5)] bg-[var(--primaryColor)] transition-transform hover:scale-[1.02] duration-300">
-      
+    <div className="relative flex flex-col justify-between items-center w-full p-4 gap-6 rounded-[1rem] border border-[rgba(255,255,255,0.1)] shadow-lg dark:bg-[var(--primaryColor5)] bg-[var(--primaryColor)] transition-transform hover:scale-[1.02] duration-300 sm:max-w-[28rem]">
       {/* Project Icon */}
-      <div className="w-24 h-24">
+      <div className="w-20 h-20 sm:w-24 sm:h-24">
         <Image
           src={project.icon}
           alt={project.title}
@@ -31,11 +27,11 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
       </div>
 
       {/* Project Title */}
-      <h2 className="text-lg font-semibold text-center mt-2">{project.title}</h2>
+      <h2 className="text-base font-semibold text-center mt-2 sm:text-lg">{project.title}</h2>
 
       {/* Repository Type */}
       <div
-        className={`rounded-full px-3 py-1 text-xs font-semibold text-center ${
+        className={`rounded-full px-3 py-1 text-xs font-semibold text-center sm:text-sm ${
           project.repoType === RepoType.Private
             ? "text-[var(--errorColor)] bg-[var(--errorColor50)]"
             : "text-[var(--successColor)] bg-[var(--successColor50)]"
@@ -64,7 +60,7 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
       )}
 
       {/* Links */}
-      <Row classNames="flex justify-center items-center gap-4 mt-4">
+      <div className="flex justify-center items-center gap-4 mt-4">
         {project.githubUrl && (
           <Link
             href={project.githubUrl}
@@ -85,8 +81,8 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
             <FontAwesomeIcon icon={faEye} className="text-lg" />
           </Link>
         )}
-      </Row>
-    </CardBox>
+      </div>
+    </div>
   );
 };
 

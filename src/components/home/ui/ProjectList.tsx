@@ -28,17 +28,18 @@ const ProjectList = ({ projects }: Readonly<{ projects: IProjectItem[] }>) => {
   };
 
   return (
-    <Column classNames="w-full mt-16">
-      <Row
-        classNames="w-full gap-4 overflow-x-auto no-scrollbar"
-        elementRef={carouselRef}
-      >
-        {projects.map((item, index) => {
-          return <ProjectItem key={`project-item-${index}`} project={item} />;
-        })}
-      </Row>
+    <div className="w-full mt-16 flex flex-col">
+      <div
+  className="w-full flex flex-wrap gap-4 overflow-x-auto no-scrollbar sm:grid sm:grid-cols-2 lg:grid-cols-4"
+  ref={carouselRef}
+>
+  {projects.map((item, index) => (
+    <ProjectItem key={`project-item-${index}`} project={item} />
+  ))}
+</div>
 
-      <Row classNames="w-full items-center justify-center gap-4 mt-16">
+
+      <div className="w-full flex items-center justify-center gap-4 mt-16">
         <button
           type="button"
           className="app__filled_btn !px-4 !py-2 !text-base/6 !font-normal"
@@ -54,8 +55,8 @@ const ProjectList = ({ projects }: Readonly<{ projects: IProjectItem[] }>) => {
         >
           Next
         </button>
-      </Row>
-    </Column>
+      </div>
+    </div>
   );
 };
 
