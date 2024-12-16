@@ -6,7 +6,7 @@ const projects: IProjectItem[] = [
     title: "Malware Analysis Sandbox",
     description:
       "Malware Analysis Sandbox: A secure, isolated environment for analyzing malware using both static and dynamic techniques. ",
-    icon: "/skills/flutter.svg",
+    icon: "/projects/malware.png",
     repoType: RepoType.Public,
     projectType: ProjectType.Personal,
     githubUrl: "https://github.com/kshirsagar26/Malware-Analysis-Sandbox",
@@ -18,7 +18,7 @@ const projects: IProjectItem[] = [
     title: "DeCap",
     description:
       "Decentralized Capital : A blockchain driven Web Application for banking systems.",
-    icon: "/skills/react.svg",
+    icon: "/projects/decap.png",
     repoType: RepoType.Public,
     projectType: ProjectType.Personal,
     githubUrl: "https://github.com/kshirsagar26/DeCap",
@@ -30,7 +30,7 @@ const projects: IProjectItem[] = [
     title: "Cocktail.exe",
     description:
       "A proof-of-concept malware developed in C++ for educational purposes to demonstrate persistence, obfuscation, and anti-debugging techniques.",
-    icon: "/skills/flutter.svg",
+    icon: "/projects/cocktail.png",
     repoType: RepoType.Public,
     projectType: ProjectType.Personal,
     githubUrl: "https://github.com/kshirsagar26/Cocktail",
@@ -42,7 +42,7 @@ const projects: IProjectItem[] = [
     title: "Railway Reservation System",
     description:
       "An efficient and user-friendly Railway Reservation System that automates ticket booking, seat management, and payment processing.",
-    icon: "/skills/nestjs.svg",
+    icon: "/projects/railway.png",
     repoType: RepoType.Public,
     projectType: ProjectType.Personal,
     githubUrl: "https://github.com/kshirsagar26/Railway-Reservation-System",
