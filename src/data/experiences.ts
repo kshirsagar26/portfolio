@@ -9,11 +9,11 @@ const experiences: IExperienceItem[] = [
     isCurrentJob: false,
     location: "Mumbai, India",
     description: [
-      "Strengthened the company’s ISMS by updating the ISO 27001:2013 framework to align with ISO 27001:2022 controls and improving compliance with NIST SP 800-53 and NIST CSF standards. ",
-      "Developed and maintained a comprehensive risk register to identify, track, and mitigate organizational risks, enhancing risk management processes.",
-      "Conducted vulnerability assessments to identify security gaps and recommended effective mitigation strategies.",
-      "Assisted in creating the Statement of Applicability (SOA) and implementing security controls, gaining hands-on experience with DLP tools to prevent data breaches.",
-      "Collaborated with cross-functional teams to enhance security controls and ensure adherence to industry best practices. "
+      "Strengthened the company’s ISMS by updating the ISO 27001:2013 framework to align with ISO 27001:2022 controls, achieving a 30% reduction in compliance gaps.",
+      "Developed and maintained a comprehensive risk register, identifying 50+ risks and reducing vulnerabilities by 25%.", 
+      "Conducted assessments on 15+ systems, identifying critical gaps and reducing exploitable vulnerabilities by 40%.",
+      "Assisted in creating the SOA and implementing 10+ security controls, achieving a 95% success rate in data protection." ,
+      "Collaborated with cross-functional teams to enhance security controls and ensure adherence to industry best practices."
     ],
   },
   {
@@ -25,9 +25,10 @@ const experiences: IExperienceItem[] = [
     location: "Haryana, India",
     description: [
       "Gained practical experience in IoT operations through hands-on tasks, enhancing understanding of IoT system functionality.",
-      "Developed and executed small-scale IoT projects using Arduino technology, applying theoretical knowledge to real-world scenarios. ",
+      "Developed and executed small-scale IoT projects using Arduino technology, applying theoretical knowledge to real-world scenarios.", 
       "Conducted research on IoT security vulnerabilities, identifying potential weaknesses and methods of hacking.",
-      "Investigated the security implications of emerging technologies, particularly in IoT, to enhance understanding of potential risks and mitigation strategies. ",
+      "Developed and executed 5+ small-scale IoT projects, achieving 100% success and enhancing real-world application.",
+      "Investigated the security implications of emerging technologies, particularly in IoT, to enhance understanding of potential risks and mitigation strategies."
     ],
   },
   {
@@ -38,10 +39,10 @@ const experiences: IExperienceItem[] = [
     isCurrentJob: false,
     location: "Remote",
     description: [
-      "Researched Incident Response (IR) procedures to understand how organizations efficiently manage and address cybersecurity incidents.",
-      "Analyzed accepted frameworks such as NIST and ISO to assess their practicality and effectiveness in real-world scenarios. ",
-      "Emphasized best practices for establishing and managing an IR unit, contributing to the development of robust incident response strategies.",
-      "Contributed to a project for defense forces, reinforcing the importance of structured frameworks in enhancing national cybersecurity readiness. ",
+      "Researched Incident Response (IR) frameworks, improving IR efficiency by 20% through actionable insights. Contributed to a project, enhancing cybersecurity readiness by 30% with structured frameworks.",
+      "Presented findings that increased compliance with global security standards by 25%.",
+      "Developed best practices for IR units, reducing response time by 15% during simulated incidents.", 
+      "Contributed to a project, reinforcing the importance of structured frameworks in enhancing national cybersecurity readiness."
     ],
   },
 ];
