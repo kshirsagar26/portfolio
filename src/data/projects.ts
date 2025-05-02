@@ -3,6 +3,18 @@ import { IProjectItem, ProjectType, RepoType } from "@/types";
 const projects: IProjectItem[] = [
   {
     id: "1",
+    title: "InboxGuard",
+    description:
+      "InboxGuard is an AI-powered web application that detects phishing emails using Google’s Gemini API with function calling. It analyzes sender details, links, and manipulative language to generate a detailed risk assessment. ",
+    icon: "/projects/malware.png",
+    repoType: RepoType.Public,
+    projectType: ProjectType.Personal,
+    githubUrl: "https://github.com/kshirsagar26/InboxGuard",
+    url: "",
+    tags: ["HTML", "CSS", "Python", "Javascript", "Google Gemini API", "TailwindCSS"],
+  },
+  {
+    id: "2",
     title: "Malware Analysis Sandbox",
     description:
       "Malware Analysis Sandbox: A secure, isolated environment for cybersecurity professionals to analyze malware using static and dynamic techniques, gaining insights into behavior without risking system integrity. ",
@@ -14,7 +26,7 @@ const projects: IProjectItem[] = [
     tags: ["HTML", "CSS", "VirustTotal", "Cuckoo Sandbox", "Javascript"],
   },
   {
-    id: "2",
+    id: "3",
     title: "DeCap",
     description:
       "Decentralized Capital is a blockchain-based app for banking, allowing users to securely manage deposits, request loans, and pay debts through a seamless, user-friendly interface for transparent finances.",
@@ -26,7 +38,7 @@ const projects: IProjectItem[] = [
     tags: ["Javascript", "Solidity", "HTML", "CSS", "MongoDB"],
   },
   {
-    id: "3",
+    id: "4",
     title: "Cocktail.exe",
     description:
       "A C++ proof-of-concept malware project created for educational purposes, demonstrating persistence, obfuscation, packing, and advanced anti-debugging techniques to showcase key concepts in malware development, evasion techniques, and comprehensive security.",
@@ -38,7 +50,7 @@ const projects: IProjectItem[] = [
     tags: ["C++", "UPX", "Encryption", "SHA256"],
   },
   {
-    id: "4",
+    id: "5",
     title: "Railway Reservation System",
     description:
       "A user-friendly and efficient Railway Reservation System that automates ticket booking, seat availability management, and secure payment processing, ensuring seamless and hassle-free travel reservations for all users.",
