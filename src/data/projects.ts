@@ -6,7 +6,7 @@ const projects: IProjectItem[] = [
     title: "InboxGuard",
     description:
       "InboxGuard is an AI-powered web application that detects phishing emails using Google’s Gemini API with function calling. It analyzes sender details, links, and manipulative language to generate a detailed risk assessment. ",
-    icon: "/projects/malware.png",
+    icon: "/projects/InboxGuard.png",
     repoType: RepoType.Public,
     projectType: ProjectType.Personal,
     githubUrl: "https://github.com/kshirsagar26/InboxGuard",
