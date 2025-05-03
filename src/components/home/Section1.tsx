@@ -31,6 +31,13 @@ const HomeSection1 = ({ id }: Readonly<{ id: string }>) => {
 
           <div className="gap-4 mt-12 lg:mt-16 flex flex-col md:flex-row">
             <TalkButton />
+            <Link
+              className="app__filled_btn min-w-[10rem]"
+              href="https://docs.google.com/document/d/1D1ZplMisyzXGw92y_9zpcaE7hnKcwfCmA8ui3mqmD9k/edit?usp=sharing"
+              target="_blank"
+            >
+             Download Resume
+            </Link>
           </div>
         </Column>
 

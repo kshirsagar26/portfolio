@@ -33,7 +33,8 @@ const WebVitals = dynamic(() => import("@/components/common/WebVitals"), {
   ssr: false,
 });
 const FloatingNavbar = dynamic(
-  () => import("@/components/navbar/FloatingNavbar")
+  () => import("@/components/navbar/FloatingNavbar"),
+  { ssr: false } // Ensure the component is only rendered on the client side
 );
 const ScrollToTop = dynamic(() => import("@/components/common/ScrollToTop"));
 
