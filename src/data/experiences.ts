@@ -2,20 +2,6 @@ import { IExperienceItem } from "@/types";
 
 const experiences: IExperienceItem[] = [
   {
-    designation: "Security Analyst",
-    company: "GREENIE – BGV Startup",
-    startDate: "Jan 2024",
-    endDate: "Aug 2024",
-    isCurrentJob: false,
-    location: "Pune, India",
-    description: [
-      "Conducted risk assessments and designed security controls for a background verification system handling sensitive identity data (Aadhar, PAN, address, work history).",
-      "Performed vulnerability assessments and secured API endpoints to prevent unauthorized access to PII.",
-      "Collaborated with developers to implement encryption and access management policies, aligning with industry best practices.",
-      "Ensured data security and compliance by identifying and mitigating risks in data verification workflows and third-party integrations."
-    ],
-  },
-  {
     designation: "Intern - Cybersecurity Advisory Services",
     company: "AUJAS CYBERSECURITY LTD",
     startDate: "Jun 2023",
