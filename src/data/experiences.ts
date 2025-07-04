@@ -9,11 +9,10 @@ const experiences: IExperienceItem[] = [
     isCurrentJob: false,
     location: "Mumbai, India",
     description: [
-      "Strengthened the company’s ISMS by updating the ISO 27001:2013 framework to align with ISO 27001:2022 controls, achieving a 30% reduction in compliance gaps.",
-      "Developed and maintained a comprehensive risk register, identifying 50+ risks and reducing vulnerabilities by 25%.", 
-      "Conducted assessments on 15+ systems, identifying critical gaps and reducing exploitable vulnerabilities by 40%.",
-      "Assisted in creating the SOA and implementing 10+ security controls, achieving a 95% success rate in data protection.", 
-      "Collaborated with cross-functional teams to enhance security controls and ensure adherence to industry best practices."
+      "Accomplished a 30% reduction in compliance gaps by aligning the company’s ISMS with updated ISO 27001:2022 controls through framework enhancement.",
+      "Achieved a 25% decrease in vulnerabilities and identified 50+ risks by building and managing a detailed risk register, and by assessing over 15 systems for security weaknesses.", 
+      "Improved data protection success rate to 95% by helping design the SOA and implement 10+ security controls, collaborating with cross-functional teams to strengthen controls and align with best practices.",
+      "Collaborated with cross-functional teams to enhance security controls and ensure adherence to industry best practices.", 
     ],
   },
   {
@@ -24,8 +23,9 @@ const experiences: IExperienceItem[] = [
     isCurrentJob: false,
     location: "Haryana, India",
     description: [
-      "Gained hands-on experience in IoT operations by developing and executing 5+ Arduino-based projects, bridging theory with real-world applications.",
-      "Conducted research on IoT security vulnerabilities, identifying potential threats and exploitation methods."
+      "Accomplished bridging theoretical concepts with practical IoT implementation by creating and deploying 5+ Arduino-based projects, leading to hands-on operational experience.",
+      "Enhanced awareness of IoT security risks by researching and identifying common vulnerabilities and possible exploitation methods.",
+      "Contributed to improving IoT security posture by documenting findings and suggesting countermeasures, enriching internal knowledge bases.",
     ],
   },
   {
@@ -36,10 +36,9 @@ const experiences: IExperienceItem[] = [
     isCurrentJob: false,
     location: "Remote",
     description: [
-      "Researched and analyzed Incident Response (IR) frameworks, improving response efficiency by 20% and contributing to a 30% increase in cybersecurity readiness.",
-      "Presented findings that boosted compliance with international security standards by 25%.",
-      "Developed IR best practices that reduced simulated incident response time by 15%, reinforcing the value of structured frameworks in national cybersecurity.",
-      "Contributed to a project, reinforcing the importance of structured frameworks in enhancing national cybersecurity readiness."
+      "Accomplished a 20% boost in incident response efficiency and a 30% rise in cybersecurity readiness by researching and refining Incident Response (IR) frameworks.",
+      "Improved adherence to global security standards by 25% by delivering actionable research findings on IR frameworks.",
+      "Achieved a 15% reduction in simulated incident response times by developing IR best practices, reinforcing structured response approaches for national cybersecurity.",
     ],
   },
 ];
