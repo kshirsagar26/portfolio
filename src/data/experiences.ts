@@ -9,10 +9,11 @@ const experiences: IExperienceItem[] = [
     isCurrentJob: false,
     location: "Mumbai, India",
     description: [
-      "Accomplished a 30% reduction in compliance gaps by aligning the company’s ISMS with updated ISO 27001:2022 controls through framework enhancement.",
-      "Achieved a 25% decrease in vulnerabilities and identified 50+ risks by building and managing a detailed risk register, and by assessing over 15 systems for security weaknesses.", 
-      "Improved data protection success rate to 95% by helping design the SOA and implement 10+ security controls, collaborating with cross-functional teams to strengthen controls and align with best practices.",
-      "Collaborated with cross-functional teams to enhance security controls and ensure adherence to industry best practices.", 
+      "Led a team to perform comprehensive vulnerability assessments, identifying and triaging 50+ risks across client infrastructure, resulting in a 25% reduction in critical vulnerabilities.",
+      "Executed application-level security reviews and proactive threat modeling to anticipate and mitigate potential cyber threats and anomalous application behavior.",
+      "Designed and assisted in the implementation of 10+ security controls, ensuring strict alignment with the ISO 27001:2022 standard to strengthen defense-in-depth principles.",
+      "Advocated Security Development Lifecycle (SDLC) integration by actively collaborating with engineering teams, advising on secure design patterns and critical threat mitigation strategies.",
+       
     ],
   },
   {
@@ -36,9 +37,9 @@ const experiences: IExperienceItem[] = [
     isCurrentJob: false,
     location: "Remote",
     description: [
-      "Accomplished a 20% boost in incident response efficiency and a 30% rise in cybersecurity readiness by researching and refining Incident Response (IR) frameworks.",
-      "Improved adherence to global security standards by 25% by delivering actionable research findings on IR frameworks.",
-      "Achieved a 15% reduction in simulated incident response times by developing IR best practices, reinforcing structured response approaches for national cybersecurity.",
+      "Researched and refined Incident Response (IR) frameworks and playbooks, improving IR efficiency by 20% and reducing simulated response times by 15%.",
+      "Delivered actionable research on global security standards to improve adherence and cybersecurity readiness.",
+      "Specifically enhanced playbooks for high-impact cyber threats, including web application compromise and data exfiltration scenarios.",
     ],
   },
 ];
