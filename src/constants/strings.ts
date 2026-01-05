@@ -31,8 +31,13 @@ class Strings {
   static koFiLink = "https://ko-fi.com/nixrajput";
   static koFiUsername = "nixrajput";
 
-  static fullName = "Nikhil Rajput";
-  static shortName = "nixrajput";
+  static fullName = "Shlok Kshirsagar";
+  static shortName = "shlok";
+
+  static resumeLink = "https://docs.google.com/document/d/1D1ZplMisyzXGw92y_9zpcaE7hnKcwfCmA8ui3mqmD9k/edit?tab=t.0";
+
+  static calendly = "Calendly";
+  static calendlyLink = "https://calendly.com/kshirsagarshlok/30min";
 }
 
 export default Strings;

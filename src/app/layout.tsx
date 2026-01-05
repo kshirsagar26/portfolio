@@ -1,28 +1,16 @@
 "use client";
 
 import "./globals.scss";
-import { Poppins } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import { ReactNode } from "react";
 import dynamic from "next/dynamic";
 import { navMenus } from "@/data/navMenus";
+import Navbar from "@/components/Navbar";
 
-const poppins = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
-  subsets: ["latin", "latin-ext"],
-  display: "swap",
-  preload: true,
-  fallback: [
-    "system-ui",
-    "arial",
-    "BlinkMacSystemFont",
-    "Segoe UI",
-    "Roboto",
-    "Oxygen",
-    "Ubuntu",
-    "Fira Sans",
-    "Droid Sans",
-  ],
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
 });
 
 const GoogleAnalytics = dynamic(
@@ -32,23 +20,23 @@ const GoogleAnalytics = dynamic(
 const WebVitals = dynamic(() => import("@/components/common/WebVitals"), {
   ssr: false,
 });
-const FloatingNavbar = dynamic(
-  () => import("@/components/navbar/FloatingNavbar"),
-  { ssr: false } // Ensure the component is only rendered on the client side
-);
+
 const ScrollToTop = dynamic(() => import("@/components/common/ScrollToTop"));
 
 const isDebug = process.env.NODE_ENV === "development";
 
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
-    <html lang="en" className={poppins.className} suppressHydrationWarning={true}>
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`} suppressHydrationWarning={true}>
       {isDebug ? null : <GoogleAnalytics />}
 
-      <body className={isDebug ? "debug-screens" : ""}>
+      <body className={`${isDebug ? "debug-screens" : ""} antialiased selection:bg-cyber-blue selection:text-black`}>
+        <div className="scanlines" />
+        <div className="fixed inset-0 z-[-1] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-900 via-[#0a0a0f] to-black opacity-80" />
+
         {isDebug ? <WebVitals /> : null}
-        <FloatingNavbar className="app_nav" navItems={navMenus} />
-        <main>{children}</main>
+        <Navbar />
+        <main className="relative z-10">{children}</main>
         <ScrollToTop />
       </body>
     </html>

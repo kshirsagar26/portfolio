@@ -16,27 +16,47 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'cyber-dark-bg': '#020617', // Slate 950
+        'cyber-dark-card': '#0f172a', // Slate 900
+        'cyber-gray': '#94a3b8',
+        'cyber-green': '#00FF41',
+        'cyber-blue': '#00A3FF',
+        'terminal-green': '#22c55e',
+      },
       animation: {
         move: "move 5s linear infinite",
+        'scanline': 'scanline 8s linear infinite',
+        'glitch': 'glitch 1s linear infinite',
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       keyframes: {
         move: {
           "0%": { transform: "translateX(-200px)" },
           "100%": { transform: "translateX(200px)" },
         },
+        scanline: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(100%)' },
+        },
+        glitch: {
+          '2%, 64%': { transform: 'translate(2px,0) skew(0deg)' },
+          '4%, 60%': { transform: 'translate(-2px,0) skew(0deg)' },
+          '62%': { transform: 'translate(0,0) skew(5deg)' },
+        },
       },
     },
   },
   plugins: [
     require("@tailwindcss/typography"),
-    require("tailwindcss-debug-screens"),
+     require("tailwindcss-debug-screens"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
           "bg-grid": (value: any) => ({
             backgroundImage: `url("${svgToDataUri(
-              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
             )}")`,
           }),
           "bg-grid-small": (value: any) => ({

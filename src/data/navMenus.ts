@@ -12,19 +12,14 @@ import {
 
 export const navMenus: INavItem[] = [
   {
-    name: "About",
-    link: "/#about",
-    icon: faUser,
-  },
-  {
-    name: "Services",
-    link: "/#services",
-    icon: faBriefcase,
-  },
-  {
-    name: "Experiences",
+    name: "Experience",
     link: "/#experiences",
     icon: faTimeline,
+  },
+  {
+    name: "Projects",
+    link: "/#projects",
+    icon: faLaptopCode,
   },
   {
     name: "Skills",
@@ -32,9 +27,9 @@ export const navMenus: INavItem[] = [
     icon: faAward,
   },
   {
-    name: "Projects",
-    link: "/#projects",
-    icon: faLaptopCode,
+    name: "Awards",
+    link: "/#awards",
+    icon: faAward,
   },
   {
     name: "Contact",

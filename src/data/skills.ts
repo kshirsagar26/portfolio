@@ -26,10 +26,6 @@ const skills: ISkillListItem[] = [
     title: "Technological Skills",
     items: [
       {
-        title: "Linux",
-        icon: "/skills/linux.svg",
-      },
-      {
         title: "VAPT",
         icon: "/skills/hacker.png",
       },
@@ -50,13 +46,46 @@ const skills: ISkillListItem[] = [
         icon: "/skills/dlp.svg",
       },
       {
-        title: "ISO Standards",
-        icon: "/skills/iso.png"
+        title: "Threat Modelling",
+        icon: "/skills/hacker.png",
       },
       {
-        title: "NIST Standards",
-        icon: "/skills/NIST.webp"
-      }
+        title: "Incident Response",
+        icon: "/skills/hacker.png",
+      },
+      {
+        title: "Cloud Security",
+        icon: "/skills/network.png",
+      },
+      {
+        title: "Digital Forensics",
+        icon: "/skills/key.png",
+      },
+    ],
+  },
+  {
+    title: "Frameworks & Standards",
+    items: [
+      {
+        title: "ISO (27001)",
+        icon: "/skills/iso.png",
+      },
+      {
+        title: "NIST (CSF)",
+        icon: "/skills/NIST.webp",
+      },
+      {
+        title: "SDLC Security",
+        icon: "/skills/hacker.png",
+      },
+      {
+        title: "Defense-in-Depth",
+        icon: "/skills/network.png",
+      },
+      {
+        title: "Cyber Kill Chain",
+        icon: "/skills/hacker.png",
+      },
     ],
   },
   {
@@ -92,61 +121,7 @@ const skills: ISkillListItem[] = [
       },
     ],
   },
-  {
-    title: "Security Platforms",
-    items: [
-      {
-        title: "Bugcrowd",
-        icon: "/skills/bugcrowd.png",
-      },
-      {
-        title: "Hackerone",
-        icon: "/skills/hackerone.svg",
-      },
-      {
-        title: "TryHackMe",
-        icon: "/skills/tryhackme.png",
-      },
-    ],
-  },
-  {
-    title: "Operating System",
-    items: [
-      {
-        title: "Windows",
-        icon: "/skills/windows.png",
-      },
-      {
-        title: "MacOS",
-        icon: "/skills/icons8-macos.svg",
-      },
-      {
-        title: "Kali Linux",
-        icon: "/skills/kali.svg",
-      }
-    ],
-  },
-  {
-    title: "IDE",
-    items: [
-      {
-        title: "Pycharm",
-        icon: "/skills/icons8-pycharm.svg",
-      },
-      {
-        title: "VS Code",
-        icon: "/skills/vscode.svg",
-      },
-      {
-        title: "Google Collab",
-        icon: "/skills/gc.svg",
-      },
-      {
-        title: "Jupyter",
-        icon: "/skills/jupyter.svg"
-      }
-    ],
-  },
+
 ];
 
 export default skills;

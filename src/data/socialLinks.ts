@@ -23,12 +23,6 @@ const socialLinks: ISocialLinkItem[] = [
     text: Strings.linkedInUsername,
   },
   {
-    name: Strings.instagram,
-    url: Strings.instagramLink,
-    icon: faInstagram,
-    text: Strings.instagramUsername,
-  },
-  {
     name: Strings.email,
     url: Strings.primaryEmailLink,
     icon: faEnvelope,
