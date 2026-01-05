@@ -40,11 +40,9 @@ const SkillMatrix = () => {
                                         className="group relative flex items-center gap-3 px-4 py-3 bg-cyber-dark-card/40 border border-white/5 hover:border-cyber-green/50 rounded-sm transition-all duration-300 hover:bg-cyber-blue/5 overflow-hidden"
                                     >
                                         <div className="relative w-6 h-6 flex-shrink-0 grayscale group-hover:grayscale-0 transition-all duration-300 opacity-70 group-hover:opacity-100 group-hover:scale-110">
-                                            <Image
-                                                src={skill.icon || ""}
+                                            <img
+                                                src={skill.icon}
                                                 alt={skill.title}
-                                                width={24}
-                                                height={24}
                                                 className="w-full h-full object-contain"
                                             />
                                         </div>
@@ -54,7 +52,7 @@ const SkillMatrix = () => {
                                         </span>
 
                                         {/* Status Indicator */}
-                                        <div className="ml-2 w-1.5 h-1.5 rounded-full bg-gray-700 group-hover:bg-cyber-green shadow-[0_0_5px_theme('colors.cyber.green')] transition-colors" />
+                                        <div className="ml-2 w-1.5 h-1.5 rounded-full bg-gray-700 group-hover:bg-cyber-green shadow-[0_0_5px_theme('colors.cyber-green')] transition-colors" />
 
                                         {/* Decorative Corner */}
                                         <div className="absolute -top-1 -right-1 w-2 h-2 border-b border-l border-white/10 group-hover:border-cyber-green/30" />
