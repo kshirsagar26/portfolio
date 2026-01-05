@@ -33,7 +33,7 @@ const ContactSection = () => {
                         className="group flex items-center gap-3 px-8 py-4 bg-cyber-blue hover:bg-cyber-blue/80 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(0,163,255,0.3)] hover:shadow-[0_0_30px_rgba(0,163,255,0.5)]"
                     >
                         <Calendar className="w-6 h-6 text-black" />
-                        <span className="font-bold text-black text-lg tracking-wide uppercase">Let's Talk</span>
+                        <span className="font-bold text-black text-lg tracking-wide uppercase">Let&apos;s Talk</span>
                     </Link>
                 </div>
 

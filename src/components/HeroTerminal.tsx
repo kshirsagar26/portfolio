@@ -7,15 +7,18 @@ import Link from "next/link";
 import Strings from "@/constants/strings";
 import GlassCard from "./ui/GlassCard";
 
+const TERMINAL_LINES = [
+    "> INITIALIZING SECURE CONNECTION...",
+    "> ACCESSING MAINFRAME...",
+    "> USER: SHLOK KSHIRSAGAR",
+    "> ROLE: CYBERSECURITY PROFESSIONAL",
+    "> STATUS: ONLINE",
+];
+
 const HeroTerminal = () => {
     const [typedText, setTypedText] = useState<string[]>([]);
-    const lines = [
-        "> INITIALIZING SECURE CONNECTION...",
-        "> ACCESSING MAINFRAME...",
-        "> USER: SHLOK KSHIRSAGAR",
-        "> ROLE: CYBERSECURITY PROFESSIONAL",
-        "> STATUS: ONLINE",
-    ];
+
+    // ... (keep usage of TERMINAL_LINES instead of lines)
 
     const [subtitle, setSubtitle] = useState("");
     const fullSubtitle = "Cybersecurity Engineer";
@@ -37,18 +40,22 @@ const HeroTerminal = () => {
     useEffect(() => {
         let lineIndex = 0;
         let charIndex = 0;
-        let currentText = [...typedText];
+        let currentText: string[] = [];
 
         const typeLine = () => {
-            if (lineIndex >= lines.length) return;
+            if (lineIndex >= TERMINAL_LINES.length) return;
 
-            const currentLine = lines[lineIndex];
+            const currentLine = TERMINAL_LINES[lineIndex];
+
+            // Safety check
+            if (!currentLine) return;
+
             if (charIndex < currentLine.length) {
                 // Determine if we need to add a new line or update the last one
                 if (charIndex === 0) {
                     currentText.push(currentLine[0]);
                 } else {
-                    currentText[lineIndex] = currentText[lineIndex] + currentLine[charIndex];
+                    currentText[lineIndex] = (currentText[lineIndex] || "") + currentLine[charIndex];
                 }
 
                 setTypedText([...currentText]);
@@ -64,7 +71,7 @@ const HeroTerminal = () => {
         // Start typing terminal after a delay
         const timeout = setTimeout(typeLine, 500);
         return () => clearTimeout(timeout);
-    }, []);
+    }, []); // Empty dependency array is fine here as we use constants/local vars
 
     return (
         <section className="min-h-screen flex items-center justify-center pt-20 pb-10 px-4">

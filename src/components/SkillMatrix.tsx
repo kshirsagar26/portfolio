@@ -5,6 +5,7 @@ import { Crosshair, Terminal, Cpu } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
 
+
 const SkillMatrix = () => {
     return (
         <section id="skills" className="py-20 px-4 relative">
@@ -39,7 +40,13 @@ const SkillMatrix = () => {
                                         className="group relative flex items-center gap-3 px-4 py-3 bg-cyber-dark-card/40 border border-white/5 hover:border-cyber-green/50 rounded-sm transition-all duration-300 hover:bg-cyber-blue/5 overflow-hidden"
                                     >
                                         <div className="relative w-6 h-6 flex-shrink-0 grayscale group-hover:grayscale-0 transition-all duration-300 opacity-70 group-hover:opacity-100 group-hover:scale-110">
-                                            <img src={skill.icon} alt={skill.title} className="w-full h-full object-contain" />
+                                            <Image
+                                                src={skill.icon || ""}
+                                                alt={skill.title}
+                                                width={24}
+                                                height={24}
+                                                className="w-full h-full object-contain"
+                                            />
                                         </div>
 
                                         <span className="font-mono text-sm text-gray-300 group-hover:text-cyber-green transition-colors z-10">
