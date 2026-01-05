@@ -5,13 +5,17 @@ import GlassCard from "./ui/GlassCard";
 import { Award, ExternalLink, Calendar, BadgeCheck } from "lucide-react";
 import Link from "next/link";
 
+
 const CertificationsAwards = () => {
     return (
-        <section id="awards" className="py-20 px-4 relative">
-            <div className="max-w-6xl mx-auto px-4 z-10 relative">
-                <h2 className="text-4xl font-bold text-white text-center mb-12 uppercase tracking-wide">
-                    Certifications & Awards
-                </h2>
+        <section id="awards" className="py-20 px-4 relative bg-cyber-dark-bg">
+            <div className="max-w-7xl mx-auto px-4 z-10 relative">
+                <div className="flex items-center gap-3 mb-12">
+                    <Award className="text-cyber-green w-8 h-8" />
+                    <h2 className="text-3xl font-mono font-bold text-white">
+                        <span className="text-cyber-blue">04.</span> CERTIFICATIONS & AWARDS
+                    </h2>
+                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {awards.map((award, idx) => (
