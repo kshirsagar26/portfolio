@@ -97,7 +97,7 @@ const HeroTerminal = () => {
                         <span className="w-3 h-6 bg-cyber-green animate-pulse inline-block" />
                     </h2>
                     <p className="text-gray-400 text-lg mb-8 leading-relaxed max-w-lg">
-                        I am a Masters student at the University of Washington Bothell. I am passionate about GRC,
+                        I am a Masters student at the University of Washington Bothell. Specialized in GRC,
                         vulnerability assessment, penetration testing, and securing infrastructure against cyber threats.
                         Your security is my mission.
                     </p>
